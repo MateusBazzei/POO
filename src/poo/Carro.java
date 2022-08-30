@@ -15,6 +15,17 @@ public class Carro {
         String placa;
         int numPortas;
         
+        void imprimeDadosCarro(){
+            
+            System.out.println("-------CARRO-------");
+            System.out.println("Cor: "+ cor);
+            System.out.println("Número de portas: "+ numPortas);
+            System.out.println("Tipo: "+ tipo);
+            System.out.println("Placa: "+ placa);
+        }
+        
+        
+        
         public String getTipo(){
             return tipo;
         }

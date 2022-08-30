@@ -22,11 +22,7 @@ public class POO {
         meuCarro.setPlaca("J-2304");
         meuCarro.setTipo("Gol");
         
-        System.out.println("-------CARRO-------");
-        System.out.println("Cor: "+meuCarro.getCor());
-        System.out.println("Número de portas: "+meuCarro.getNumPortas());
-        System.out.println("Tipo: "+meuCarro.getTipo());
-        System.out.println("Placa: "+meuCarro.getPlaca());
+        meuCarro.imprimeDadosCarro();
         
         
         Pessoa dona = new Pessoa();
@@ -36,11 +32,8 @@ public class POO {
         dona.setBiotipo("Magro");
         dona.setIdade(23);
         
-        System.out.println("-------PESSOA-------");
-        System.out.println("Nome: "+dona.getNome());
-        System.out.println("Cor do cabelo: "+dona.getCorCabelo());
-        System.out.println("Biotipo: "+dona.getBiotipo());
-        System.out.println("Idade: "+dona.getIdade());
+        dona.imprimeDadosPessoa();
+       
         
         Barco meuBarco = new Barco();
         
@@ -49,11 +42,7 @@ public class POO {
         meuBarco.setNome("Navio Militar");
         meuBarco.setObjetos(5);
         
-        System.out.println("-------BARCO-------");
-        System.out.println("Nome do barco: "+meuBarco.getNome());
-        System.out.println("Tipo: "+meuBarco.getTipo());
-        System.out.println("Cor: "+meuBarco.getCor());
-        System.out.println("Número de objetos: "+meuBarco.getObjetos());
+        meuBarco.imprimeDadosBarco();
                 
     }
     

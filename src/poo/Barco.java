@@ -15,6 +15,17 @@ public class Barco {
         String nome;
         int objetos;
     
+        void imprimeDadosBarco(){
+            
+        System.out.println("-------BARCO-------");
+        System.out.println("Nome do barco: "+nome);
+        System.out.println("Tipo: "+tipo);
+        System.out.println("Cor: "+cor);
+        System.out.println("Número de objetos: "+objetos);
+        
+        }
+        
+        
         public String getTipo(){
             return tipo;
         }
