@@ -14,6 +14,14 @@ package poo;
 public class POO {
     
     public static void main(String[] args) {
+        
+      //  double a=3, b=2;
+        
+      //   System.out.println("Resultado: "+Calculo.elevar(a,b));
+        
+        
+        
+        
         Carro meuCarro = new Carro();
         
         
