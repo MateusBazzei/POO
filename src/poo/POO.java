@@ -5,47 +5,56 @@
  */
 package poo;
 
-import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
+
 
 /**
  *
  * @author mateus.bazzei
  */
-public class POO extends Application {
+public class POO {
     
-    @Override
-    public void start(Stage primaryStage) {
-        Button btn = new Button();
-        btn.setText("Say 'Hello World'");
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
-            }
-        });
-        
-        StackPane root = new StackPane();
-        root.getChildren().add(btn);
-        
-        Scene scene = new Scene(root, 300, 250);
-        
-        primaryStage.setTitle("Hello World!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        launch(args);
+        Carro meuCarro = new Carro();
+        
+        
+        meuCarro.setCor("preto");
+        meuCarro.setNumPortas(4);
+        meuCarro.setPlaca("J-2304");
+        meuCarro.setTipo("Gol");
+        
+        System.out.println("-------CARRO-------");
+        System.out.println("Cor: "+meuCarro.getCor());
+        System.out.println("Número de portas: "+meuCarro.getNumPortas());
+        System.out.println("Tipo: "+meuCarro.getTipo());
+        System.out.println("Placa: "+meuCarro.getPlaca());
+        
+        
+        Pessoa dona = new Pessoa();
+        
+        dona.setNome("Mateus");
+        dona.setCorCabelo("Loiro");
+        dona.setBiotipo("Magro");
+        dona.setIdade(23);
+        
+        System.out.println("-------PESSOA-------");
+        System.out.println("Nome: "+dona.getNome());
+        System.out.println("Cor do cabelo: "+dona.getCorCabelo());
+        System.out.println("Biotipo: "+dona.getBiotipo());
+        System.out.println("Idade: "+dona.getIdade());
+        
+        Barco meuBarco = new Barco();
+        
+        meuBarco.setCor("Preto e Branco");
+        meuBarco.setTipo("Navio");
+        meuBarco.setNome("Navio Militar");
+        meuBarco.setObjetos(5);
+        
+        System.out.println("-------BARCO-------");
+        System.out.println("Nome do barco: "+meuBarco.getNome());
+        System.out.println("Tipo: "+meuBarco.getTipo());
+        System.out.println("Cor: "+meuBarco.getCor());
+        System.out.println("Número de objetos: "+meuBarco.getObjetos());
+                
     }
     
 }
